@@ -39,6 +39,7 @@ sub client_start {
         unless defined $pass;
 
     $self->{_client}   = Authen::SCRAM::Client->new(
+        digest   => $self->digest,
         username => $user,
         password => $pass,
         );
@@ -81,6 +82,7 @@ sub server_start {
 
     $self->{need_step} = 1;
     $self->{_server}   = Authen::SCRAM::Server->new(
+        digest        => $self->digest,
         credential_cb => $self->callback('getsecret')
         );
 
