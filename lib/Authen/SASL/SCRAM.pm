@@ -51,8 +51,8 @@ sub client_step {
     my $self = shift;
     my $challenge = shift;
 
-    $self->{state}--;
-    if ($self->{state} == 1) {
+    $self->{need_step}--;
+    if ($self->{need_step} == 1) {
         try {
             return $self->{_client}->final_msg( $challenge );
         }
