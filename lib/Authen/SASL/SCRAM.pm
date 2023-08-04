@@ -13,6 +13,15 @@ use parent qw(Authen::SASL::Perl);
 use Authen::SCRAM::Client;
 use Authen::SCRAM::Server;
 
+my %secflags = (
+  noplaintext => 1,
+  noanonymous => 1,
+);
+
+sub _secflags {
+  shift;
+  scalar grep { $secflags{$_} } @_;
+}
 
 
 sub client_start {
