@@ -10,7 +10,7 @@ Authen::SASL::Perl::SCRAM_SHA_256 - SCRAM-SHA-256 support for Authen::SASL
 
 =head1 VERSION
 
-0.02
+0.03
 
 =head1 SYNOPSIS
 
@@ -28,7 +28,7 @@ Authen::SASL::Perl::SCRAM_SHA_256 - SCRAM-SHA-256 support for Authen::SASL
 
 use parent 'Authen::SASL::SCRAM';
 
-our @VERSION = '0.02';
+our @VERSION = '0.03';
 
 sub _order { 11 }
 
