@@ -1,4 +1,8 @@
 
+0.02  2023-08-06
+   [Fixed]
+     - Add missing dependency (Authen::SASL)
+
 0.01  2023-08-05
    [Added]
      - Initial release
