@@ -4,7 +4,7 @@ use warnings;
 
 use Test2::V0;
 
-use Authen::SASL;
+use Authen::SASL qw(Perl);
 use Authen::SCRAM::Client;
 
 
