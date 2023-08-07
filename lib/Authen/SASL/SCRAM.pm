@@ -12,7 +12,7 @@ Authen::SASL::SCRAM - SCRAM support for Authen::SASL
 
 =head1 VERSION
 
-0.03
+0.04
 
 =head1 SYNOPSIS
 
@@ -70,7 +70,7 @@ use Authen::SCRAM::Client;
 use Authen::SCRAM::Server;
 
 
-our @VERSION = '0.03';
+our @VERSION = '0.04';
 
 my %secflags = (
   noplaintext => 1,

@@ -10,7 +10,7 @@ Authen::SASL::Perl::SCRAM_SHA_512 - SCRAM-SHA-512 support for Authen::SASL
 
 =head1 VERSION
 
-0.03
+0.04
 
 =head1 SYNOPSIS
 
@@ -28,7 +28,7 @@ Authen::SASL::Perl::SCRAM_SHA_512 - SCRAM-SHA-512 support for Authen::SASL
 
 use parent 'Authen::SASL::SCRAM';
 
-our @VERSION = '0.03';
+our @VERSION = '0.04';
 
 sub _order { 12 }
 
